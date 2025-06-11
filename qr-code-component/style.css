@@ -42,23 +42,34 @@ body {
     }
 
     .card-content--text {
-      font-family: "Outfit", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
 
+      .card-content--text-title,
+      .card-content--text-description {
+        width: 16rem;
+        font-family: "Outfit", sans-serif;
+      }
+
       .card-content--text-title {
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: bold;
         line-height: 120%;
         letter-spacing: 0px;
+        color: #1f314f;
       }
 
       .card-content--text-description {
         margin-top: 1rem;
 
-        font-size: 15px;
+        font-size: 0.938rem;
         font-weight: normal;
         line-height: 140%;
         letter-spacing: 0.2px;
+        color: #68778d;
       }
     }
   }
